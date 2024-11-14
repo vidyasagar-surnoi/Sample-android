@@ -23,9 +23,9 @@ jobs:
 
       - name: Setup Java JDK
         uses: actions/setup-java@v4.0.0
-        # with:
-        #   java-version: '17'
-        #   distribution: 'adopt'
+        with:
+          java-version: '8'
+          distribution: 'temurin'
 
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
